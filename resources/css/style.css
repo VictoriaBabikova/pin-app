@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%; 
+    font-family: "Roboto", "Arial","sans-serif";
+    position: relative;
+}
+.container {
+    width:100vw;
+    height: 100vh;
+    background: #F2F6FA;
+}
+.container-title {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+        "m m c c c c c c c c c c"
+        "m m c c c c c c c c c c"
+        "m m c c c c c c c c c c";
+}
+.title-bar {
+    width: 50%;
+    display: flex;
+    text-align: center;
+    color: #FFF;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 11px;
+    text-align: left;
+    align-items: center;
+}
+.title-bar > span {
+    width: 55%;
+    margin: 0 auto;
+}
+.site-bar {
+    grid-area: m;
+    background-color: #374050;
+}
+.site-bar-header {
+    display: flex;
+    height: 8vh;
+}
+.site-bar > h6 {
+    padding: 10px 10px 10px 20px;
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 11px;
+}
+.site-bar > span {
+    color: #FFF;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 11px;
+}
+.wrapper-logo {
+    width: 50%;
+    background-color: #F2F6FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 35px;
+}
+.heder-list {
+    background-color: #F2F6FA;
+}
+.wrapper-list {
+    grid-area: c;
+}
+.header-list {
+    background-color: #FFF;
+    padding: 10px 15px;
+    display: flex;
+    height: 59px;
+    justify-content: space-between;
+    align-items: center;
+}
+.prod-name {
+    color: #ed1c24;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 11px;
+    position: relative;
+}
+.prod-name::after {
+    content: "";
+    width: 100%;
+    border-bottom: 3px solid #ed1c24;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+}
+.user-name {
+    color: #A6AFB8;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 11px;
+}
+.product-list {
+    display: flex;
+}
+.table-container {
+    width: 50%;
+}
+.table {
+    display: contents;
+	width: 100%;
+    color: #6e6e6f;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    border: none;
+}
+.table thead th {
+	
+	font-weight: 500;
+	line-height: 20px;
+	color: #6e6e6f;
+	border-bottom: 1px solid #6e6e6f;
+}
+.table th, .table td {
+    padding: 5px 10px;
+}
+tbody {
+    background-color: #FFF;
+}
+.table tbody td {
+	padding: 10px;
+	line-height: 20px;
+	border-bottom: 1px solid #6e6e6f;
+}
+.btn-container {
+    width: 48%;
+    display: flex;
+    justify-content: right;
+}
+.product-btn {
+    display: flex;
+    width: 136px;
+    height: 30px;
+    margin: 10px 0;
+    border-radius: 6px;
+    background: #0FC5FF;
+    color: #FFF;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    cursor: pointer;
+}
+.product-form {
+    display: flex;
+    flex-direction: column;
+}
+.product-form .input, .product-form label, .form-select {
+    padding: 10px 5px;
+}
+.product-form label {
+    color: #FFF;
+}
+.product-form .input, .form-select {
+    border-radius: 5px;
+    border: none;
+}
+
+.container-product {
+    background-color: #374050;
+    padding: 12px 15px;
+    display: flex;
+    position: relative;
+    min-height: 387px;
+}
+.container-product h2, .container-product h4 {
+    color: #FFF;
+}
+.container-product h4 {
+    padding-bottom: 20px;
+}
+.container-product h4 {
+    padding: 10px 0;
+}
+.container-product form {
+    width: 90%;
+}
+.container-form {
+    width: 80%;
+}
+.close-btn {
+    width: 20%;
+    display: flex;
+    justify-content: right;
+    padding: 15px 0;
+}
+.btn-add-vendor {
+    background: none;
+    width: 123px;
+    margin-bottom: 10px;
+    color: #81a9ef;
+    border: none;
+    border-bottom: 1px dashed;
+    cursor: pointer;
+}
+.vendor-group {
+    display: flex;
+}
+.vendor-group .vendor-group-item {
+    display: flex;
+    width: 44%;
+    padding:10px 0;
+    flex-direction: column;
+}
+.vendor-group-item.pd {
+    margin-left: 10px;
+} 
+.vendor-group div > input {
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: none;
+}
+.btn-delete {
+    width: 5%;
+    display: flex;
+    position: relative;
+}
+.btn-delete img {
+    position: absolute;
+    top: 55px;
+    left: 10px;
+}
+.window_prod {
+    width: 630px;
+    height: 387px;
+    max-height: max-content;
+    position: absolute;
+    top: 30%;
+    left: 34%;
+}
+.error {
+    color: #ff5025;
+    padding: 5px 0;
+}
+.message_wind, .message_delete {
+    background-color: #fffde7cf;
+    width: 300px;
+    height: 175px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.message_wind {
+    top: 30%;
+    left: 33%;
+}
+.message_delete {
+    top: 43%;
+    left: 43%;
+}
+.product_change {
+    cursor: pointer;
+}
+.article_show {
+    padding: 27px 12px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 11px; 
+}
+.product_info {
+    width: 50%;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 11px; 
+}
+.key_value {
+    display: flex;
+    padding: 10px 12px;
+}
+.key_value dt {
+    width: 50%;
+    color: rgba(255, 255, 255, 0.70);
+}
+.key_value dd {
+    color: #fff;
+}
+.product_wrap {
+    display: flex;
+}
+.btn_cont {
+    width: 50%;
+}
+.close-btn .btn {
+    padding: 3px 5px;
+    cursor: pointer;
+}
+#user_reg {
+    width: 50%;
+    margin:  0 auto;
+    padding: 10px 0;
+}
+.form-check {
+    padding: 20px 0;
+}
